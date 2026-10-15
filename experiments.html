@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Experiments | Jamie Han</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Experiments</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="design-work.html">Design Work</a></li>
+        <li><a href="video-work.html">Video Work</a></li>
+        <li><a href="experiments.html">Experiments</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Experimentation Portfolio</h2>
+    <p>The tags I will be experimenting with include: template, audio, video, canvas, source</p>
+
+    <section>
+      <h3>Template</h3>
+      <p>Template is not displayed and is stored for later.</p>
+      <template>
+        <article>
+          <h4>Template Experiment</h4>
+          <p>This is an experiment using the template tag, where Javascript copies it onto the page.</p>
+        </article>
+      </template>
+    </section>
+
+    <section>
+      <h3>Audio and Source</h3>
+      <p>The source file inside an audio player.</p>
+      <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        <p>Your browser does not support the audio element.</p>
+      </audio>
+    </section>
+
+    <section>
+      <h3>Video and Source</h3>
+      <p>Source file inside video player.</p>
+      <video controls width="320" height="180">
+        <source src="media/sample.mp4" type="video/mp4">
+        <p>Your browser does not support video playback.</p>
+      </video>
+    </section>
+
+    <section>
+      <h3>Canvas</h3>
+      <p>Surface for graphics to be drawn.</p>
+      <canvas id="demo" width="300" height="150">
+      <p>Your browser does not support the canvas element.</p>
+      </canvas>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Jamie Han</p>
+  </footer>
+
+  <script>
+    const canvas = document.getElementById("demo");
+    const pen = canvas.getContext("2d");
+    pen.fillStyle = "blue";
+    pen.fillRect(20, 20, 120, 80);
+    pen.strokeStyle = "black";
+    pen.strokeRect(20, 20, 120, 80);
+    pen.font = "12px sans-serif";
+    pen.fillStyle = "black";
+    pen.fillText("Blue rectangle", 160, 70);
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | Jamie Han</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Jamie Han</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="design-work.html">Design Work</a></li>
+        <li><a href="video-work.html">Video Work</a></li>
+        <li><a href="experiments.html">Experiments</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <hello-world></hello-world>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Jamie Han</p>
+  </footer>
+    <script>
+        class HelloWorld extends HTMLElement {
+        connectedCallback() {
+            console.log("Hello World!");
+        }
+        }
+        customElements.define("hello-world", HelloWorld);
+    </script>
+</body>
+</html>
